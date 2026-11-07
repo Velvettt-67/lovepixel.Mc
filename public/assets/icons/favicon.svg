@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5b8c7" />
+      <stop offset="50%" stop-color="#df7690" />
+      <stop offset="100%" stop-color="#9a3b54" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="20" fill="#2d101c" />
+  <circle cx="32" cy="32" r="24" fill="url(#roseGrad)" opacity="0.2" filter="url(#softGlow)" />
+  <!-- Stylized Petal Heart -->
+  <path d="M32 44C32 44 18 34.5 18 24C18 19 22 15 27 15C29.8 15 31.8 16.5 32 17.5C32.2 16.5 34.2 15 37 15C42 15 46 19 46 24C46 34.5 32 44 32 44Z" 
+        fill="url(#roseGrad)" />
+  <circle cx="32" cy="28" r="3" fill="#ffffff" opacity="0.9" />
+</svg>
